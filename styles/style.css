@@ -13,26 +13,28 @@ body {
     color: #f6f6f6;
 }
 
+/*Aqui no cabeçalho se organiza o espaçamento dos links home e sobre mim*/
 .cabecalho {
-    padding: 2% 0% 0% 10%;/*13% antes*/
+    padding: 2% 0% 0% 12%;/*13% antes*/ /*2% é padding de cima, 10% padding da esquerda*/
 }
 
 .cabecalho__menu {
-    display: flex;
-    gap: 80px;
+    display: flex;/*permite que os elementos responsivos dentro de um contêiner sejam organizados automaticamente, dependendo do tamanho da tela (ou dispositivo)*/
+    gap: 80px;/*espaçamento entre "home" e "sobre mim"*/
 }
 
 .cabecalho__menu__link {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: #22D4FD;
+    font-size: 24px; /*Tamanho da fonte*/
+    font-weight: 600; /*Peso da fonte*/
+    color: #22D4FD; /*Cor da fonte*/
+    text-decoration: none;
 }
 
 
 
 .apresentacao {
-    padding: 5% 10%;/* 5% 13% antes*/
+    padding: 5% 12%;/* 5% 13% antes*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,6 +53,7 @@ body {
     font-family: "Krona One", sans-serif;
 }
 
+
 .titulo-destaque {
     color: #22D4FD;
 }
@@ -59,6 +62,12 @@ body {
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
 
+}
+
+.apresentacao__conteudo__texto a {
+    text-decoration: none;
+    color: #22D4FD;
+    
 }
 
 .apresentacao__conteudo__cliche {
